@@ -1,0 +1,63 @@
+/* src/components/seller/Seller.css */
+
+/* 1) Overall wrapper flex */
+.seller-dashboard {
+    display: flex;
+    min-height: 100vh;
+    border: 1px solid black;
+    width: 100%;
+  }
+  
+  /* 2) Sidebar */
+  .sidebar {
+    width: 18%;
+    min-height: 100vh;
+    border: 1px solid black;
+    border-top: 0;
+    font-size: max(1vw, 10px);
+  }
+  
+  /* 3) Sidebar options container */
+  .sidebar-options {
+    padding-top: 50px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* 4) Individual link styles */
+  .sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #a9a9a9;
+    border-right: 0;
+    padding: 8px 10px;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 5) Active link highlight */
+  .sidebar-option.active {
+    background-color: #fff0ed;
+    border-color: tomato;       /* primary highlight */
+    border-color: rgb(233,229,229);  /* you can remove one of these if redundant */
+  }
+  
+  /* 6) Responsive: hide text on small screens */
+  @media (max-width: 900px) {
+    .sidebar-option p {
+      display: none;
+    }
+  }
+  
+  /* 7) Main content area next to sidebar */
+  .seller-content {
+    width: 82%;        /* 100% − sidebar 18% */
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  

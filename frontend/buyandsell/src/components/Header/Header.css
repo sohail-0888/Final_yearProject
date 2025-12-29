@@ -1,0 +1,95 @@
+.header{
+    height: 30vw;
+    margin: 30px auto; 
+    background-size: contain;
+    position:  relative;
+   
+    
+}
+
+.header img{
+    width: 100%;
+    height: auto; /* Makes it responsive */
+    max-height: 100vh; /* Optional limit for big screens */
+    object-fit: cover; /* Optional for a nice look */
+    
+}
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw; 
+    animation: fadeIn 2s;
+}
+
+.header-contents h2{
+    font-weight: 500;
+    font-size:max(4.5vw,22px) ;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.header-contents p{
+    color: rgb(49, 49, 49);
+    font-size: 1vw;
+}
+
+.header-contents button{
+    border: none;
+    color: #212020;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: rgb(239, 238, 238);
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    
+}
+
+h3{
+    color: rgb(59, 59, 59);
+}
+
+@media (max-width:1050px)
+{
+    
+
+    .header-contents{
+        max-width: 45%;
+    }
+
+    .header-contents h2{
+        font-weight: 200;
+        font-size:max(2.5vw,10px) ;
+       
+        color: whitesmoke;
+    }
+}
+
+@media (max-width:750px)
+{
+   
+
+    .header-contents{
+        max-width: 65%;
+    }
+ 
+    .header-contents h2{
+        font-weight: 200;
+        font-size:max(1.5vw,10px) ;
+       
+        color: whitesmoke;
+    }
+    
+   
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
+
+
+

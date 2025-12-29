@@ -1,0 +1,182 @@
+[
+  {
+    "title": "iPhone 13 Pro Max",
+    "description": "Flagship iPhone with improved camera and performance.",
+    "price": 150000,
+    "category": "mobiles",
+    "image": "mobile1.jpg",
+    "location": "",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Samsung Galaxy S21 Ultra",
+    "description": "The ultimate phone with a 108MP camera.",
+    "price": 120000,
+    "category": "mobiles",
+    "image": "mobile1.jpg",
+    "location": "Lahore",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "OnePlus 9 Pro",
+    "description": "Fast charging and smooth performance.",
+    "price": 95000,
+    "category": "mobiles",
+    "image": "mobile3.jpg",
+    "location": "Islamabad",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Xiaomi Mi 11",
+    "description": "Top-tier flagship with great display.",
+    "price": 70000,
+    "category": "mobiles",
+    "image": "mobile4.jpg",
+    "location": "Rawalpindi",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Oppo Find X3 Pro",
+    "description": "Stunning camera and design with high-end specs.",
+    "price": 95000,
+    "category": "mobiles",
+    "image": "mobile5.jpg",
+    "location": "Lahore",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Google Pixel 5",
+    "description": "Stock Android experience with excellent software updates.",
+    "price": 75000,
+    "category": "mobiles",
+    "image": "mobile6.jpg",
+    "location": "Karachi",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Realme GT 5G",
+    "description": "Powerful performance and fast charging.",
+    "price": 45000,
+    "category": "mobiles",
+    "image": "mobile7.jpg",
+    "location": "Karachi",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Vivo V21 5G",
+    "description": "Amazing selfie camera and 5G ready.",
+    "price": 55000,
+    "category": "mobiles",
+    "image": "mobile8.jpg",
+    "location": "Lahore",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Oppo F19 Pro",
+    "description": "Great camera and solid performance.",
+    "price": 45000,
+    "category": "mobiles",
+    "image": "mobile9.jpg",
+    "location": "Islamabad",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Huawei P40 Pro",
+    "description": "Flagship device with amazing camera.",
+    "price": 110000,
+    "category": "mobiles",
+    "image": "mobile10.jpg",
+    "location": "Rawalpindi",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Google Pixel 6",
+    "description": "Pure Android experience with great software.",
+    "price": 95000,
+    "category": "mobiles",
+    "image": "mobile11.jpg",
+    "location": "Lahore",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Xiaomi Redmi Note 11",
+    "description": "Affordable smartphone with great features.",
+    "price": 23000,
+    "category": "mobiles",
+    "image": "mobile12.jpg",
+    "location": "Karachi",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Samsung Galaxy A52",
+    "description": "Smooth performance with a great display.",
+    "price": 45000,
+    "category": "mobiles",
+    "image": "mobile14.jpg",
+    "location": "Islamabad",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Sony Xperia 5 II",
+    "description": "High-end camera phone with great video quality.",
+    "price": 120000,
+    "category": "mobiles",
+    "image": "mobile13.jpg",
+    "location": "Rawalpindi",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Nokia 8.3 5G",
+    "description": "Solid performance and 5G connectivity.",
+    "price": 70000,
+    "category": "mobiles",
+    "image": "mobile15.jpg",
+    "location": "Lahore",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Realme Narzo 30 Pro",
+    "description": "Large battery and good performance at an affordable price.",
+    "price": 25000,
+    "category": "mobiles",
+    "image": "mobile16.jpg",
+    "location": "Karachi",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "Motorola Edge 20 Pro",
+    "description": "Flagship with a high refresh rate display.",
+    "price": 90000,
+    "category": "mobiles",
+    "image": "mobile17.jpg",
+    "location": "Islamabad",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  },
+  {
+    "title": "LG Velvet 5G",
+    "description": "Stylish design and good camera quality.",
+    "price": 45000,
+    "category": "mobiles",
+    "image": "mobile17.jpg",
+    "location": "Rawalpindi",
+    "condition": "new",
+    "seller": "680c588273b0f86a0b39409a"
+  }
+]

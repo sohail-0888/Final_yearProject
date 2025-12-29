@@ -1,0 +1,53 @@
+
+.user-table{
+    margin-top: 60px;
+    margin-left: 200px;
+    
+}
+
+.user-table p{
+    font-size: 19.5px;
+}
+
+.user-table span{
+    font-size: 1.3rem; 
+    font-weight: bold;
+   
+    
+}
+
+
+
+.user-table-format{
+    display: grid;
+   grid-template-columns: repeat(5, 1.5fr);
+
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+  
+}
+
+
+.list-table-format.title{
+    background-color: #efecec;
+
+}
+
+
+.list-table-format img{
+    width: 50px;
+}
+
+
+@media (max-width: 600px) {
+    .user-table-format {
+        grid-template-columns: 1fr 1fr; /* 2 columns on small screen */
+        gap: 15px;
+    }
+    .user-table-format.title {
+        display: none;
+    }
+}

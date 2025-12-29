@@ -1,0 +1,52 @@
+.list-report {
+    margin-top: 60px;
+     padding-left: 100px;
+     width: 100%;
+    margin-left: 50px;
+   
+}
+
+.list-report p {
+    font-size: 19.5px;
+}
+
+.list-report span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.list-table-report {
+    
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 3fr 3fr; 
+    align-items: center;
+    gap: 10px; 
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+    width: 100%; 
+    max-width: 1200px; 
+}
+
+.list-table-report.title {
+    background-color: #efecec;
+}
+
+.list-table-report img {
+    width: 80px;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .list-table-report{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+       
+    }
+    .list-table-report.title { /* Corrected the class name */
+        display: none;
+    }
+}

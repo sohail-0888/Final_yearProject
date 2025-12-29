@@ -1,0 +1,77 @@
+/* SellerAdd.css */
+
+/* Container */
+.add {
+    width: 80%;                        /* a bit wider */
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+  }
+  
+  /* Make the form full‑width and vertical */
+  .add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Upload image */
+  .add-img-upload img {
+    width: 60px;                       /* a little bigger preview */
+    background-color: white;
+  }
+  
+  /* Product name & description wrappers */
+  .add-product-name,
+  .add-product-description {
+    width: 100%;                       /* take full form width */
+    max-width: 600px;                  /* optional cap */
+  }
+  
+  /* Inputs & textarea fill their parent */
+  .add-product-name input,
+  .add-product-description textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  
+  /* Category & price row: flexible items */
+  .add-category-price {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  /* Each flex child can grow */
+  .add-category-price .add-category,
+  .add-category-price .add-price {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  /* Dropdown & number input fill their parent */
+  .add-category-price select,
+  .add-category-price input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  
+  /* Submit button slightly larger */
+  .add-btn {
+    max-width: 200px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+
+  
