@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import './NavBar.css'
+import './Navbar.css'
 import { useState } from 'react'
 import { FaCartPlus } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
