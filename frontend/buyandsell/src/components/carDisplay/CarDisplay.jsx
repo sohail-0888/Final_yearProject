@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import "./CarDisplay.css";
 import { StoreContext } from '../../context/StoreContext';
 import Prouductitem from '../ProductItems/Prouductitem';
+import API_URL from '../../config';
 function CarDisplay({ category }) {
     const { products } = useContext(StoreContext);
     return (
@@ -13,7 +14,7 @@ function CarDisplay({ category }) {
                 {products.map((item, index) => {
                     if (category === "All" || category === item.category) {
 
-                        return <Prouductitem key={index} id={item._id} name={item.title} description={item.description} image={`http://localhost:3000/${item.image}`} price={item.price} />
+                        return <Prouductitem key={index} id={item._id} name={item.title} description={item.description} image={`${API_URL}/${item.image}`} price={item.price} />
                     }
 
                 })}

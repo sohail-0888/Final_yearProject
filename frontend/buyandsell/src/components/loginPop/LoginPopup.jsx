@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { IoMdClose } from "react-icons/io";
 import "./LoginPopup.css";
-
+import API_URL from '../../config';
 import { StoreContext }  from '../../context/StoreContext';
 
 export default function LoginPopup({setShowLogin}) {
@@ -47,7 +47,7 @@ export default function LoginPopup({setShowLogin}) {
           if(currentstate === "Sign-Up")
           {
           const adduser = {name,email,password,address,phoneNo,role};
-          const  response =  await fetch("http://localhost:3000/register", {
+          const  response =  await fetch(`${API_URL}/register`, {
               method:"POST",
               body: JSON.stringify(adduser),
               headers:{
@@ -86,7 +86,7 @@ export default function LoginPopup({setShowLogin}) {
           else if(currentstate == "Login")
           {
             const loginuser = {email,password,role};
-           const response = await fetch("http://localhost:3000/login",{
+           const response = await fetch(`${API_URL}/login`,{
             method:"POST",
             body: JSON.stringify(loginuser),
             headers:{

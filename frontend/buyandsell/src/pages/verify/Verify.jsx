@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Verify.css';
+import API_URL from '../../config';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
 export default function Verify() {
@@ -10,7 +11,7 @@ export default function Verify() {
 
   const verifyPayment = async () => {
     try {
-      const response = await fetch("http://localhost:3000/verify", {
+      const response = await fetch(`${API_URL}/verify`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json", 

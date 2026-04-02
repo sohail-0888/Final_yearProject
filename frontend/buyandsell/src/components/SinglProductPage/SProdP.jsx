@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
+import API_URL from '../../config';
 import './SProdP.css';
 
 export default function SProdP() {
@@ -16,7 +17,7 @@ export default function SProdP() {
   useEffect(() => {
     const fetchsingleprod = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/SProd/${id}`, {
+        const response = await fetch(`${API_URL}/SProd/${id}`, {
           method: "GET",
           headers: {
             "content-Type": "application/json",
@@ -62,7 +63,7 @@ export default function SProdP() {
     <div className='container'>
       <div className="left-container">
         <div className="p-img">
-          <img src={`http://localhost:3000/${product.image}`} alt="product" />
+          <img src={`${API_URL}/${product.image}`} alt="product" />
         </div>
 
         <div className="p-price">

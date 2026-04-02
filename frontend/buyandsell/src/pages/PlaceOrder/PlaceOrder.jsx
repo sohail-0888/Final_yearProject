@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { StoreContext } from '../../context/StoreContext';
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import API_URL from '../../config';
 import 'react-toastify/dist/ReactToastify.css';
 import './PlaceOrder.css';
 
@@ -84,7 +85,7 @@ export default function PlaceOrder() {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/placeOrder', {
+      const response = await fetch(`${API_URL}/placeOrder`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${authToken}`,

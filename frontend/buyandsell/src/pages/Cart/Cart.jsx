@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useNavigate } from "react-router";
 import './Cart.css';
+import API_URL from '../../config';
 import { StoreContext } from '../../context/StoreContext';
 export default function Cart() { 
         const {cartItems,  products,removeFromCart,getTotalCartAmount} = useContext(StoreContext);
@@ -24,7 +25,7 @@ export default function Cart() {
                 return(
                    <div>
                  <div className='cart-items-title cart-items-item'>
-                         <img src={`http://localhost:3000/${item.image}`} alt="" />
+                         <img src={`${API_URL}/${item.image}`} alt="" />
                          <p>{item.title}</p>
                          <p>RS {item.price}</p>
                          <p>{cartItems[item._id]}</p>

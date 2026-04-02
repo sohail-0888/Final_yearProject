@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './SellerAdd.css';
+import API_URL from '../../config';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -25,7 +26,7 @@ export default function Add() {
             formdata.append("condition",condition)
             const token = localStorage.getItem('token');
 
-            const response = await fetch("http://localhost:3000/addProd",{
+            const response = await fetch(`${API_URL}/addProd`,{
                 method:"POST",
                 headers: {
                   'Authorization': `Bearer ${token}`,

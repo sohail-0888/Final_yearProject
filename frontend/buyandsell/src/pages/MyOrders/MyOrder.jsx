@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './MyOrder.css'
+import API_URL from '../../config';
 import { StoreContext } from '../../context/StoreContext'
 export default function MyOrder() {
     const {authToken} = useContext(StoreContext);
@@ -8,7 +9,7 @@ export default function MyOrder() {
 
        const fetchOrders = async  () =>{
            try {
-              const response = await fetch("http://localhost:3000/userOrders",{
+              const response = await fetch(`${API_URL}/userOrders`,{
                 method:"GET",
                 headers:{
                   'Authorization':` ${authToken}`,

@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import './Products.css';
+import API_URL from '../../config';
 import { StoreContext } from '../../context/StoreContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -160,7 +161,7 @@ export default function Products() {
           {filteredProducts.map((item, index) => (
             <div className="product-card" key={index}>
               <img
-                src={`http://localhost:3000/${item.image}`}
+                src={`${API_URL}/${item.image}`}
                 alt="Product"
                 className="product-image"
               />

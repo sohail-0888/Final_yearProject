@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import  Product from "../data/Product.json";
+import API_URL from "../config";
 
 export const StoreContext = createContext(null)
     
@@ -23,7 +24,7 @@ const StoreContextProvider = (props) => {
    useEffect(() => {
     const fetchProducts =  async() =>{
            try {
-             const  response =  await fetch("http://localhost:3000/allProd", {
+             const  response =  await fetch(`${API_URL}/allProd`, {
                 method:"Get",
                 headers:{
                   "Content-Type": "application/json",
@@ -65,7 +66,7 @@ const StoreContextProvider = (props) => {
       setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
     }
       
-    const response = await fetch("http://localhost:3000/addToCart",{
+    const response = await fetch(`${API_URL}/addToCart`,{
          method: "POST",
          
          headers: {
@@ -97,7 +98,7 @@ const StoreContextProvider = (props) => {
   const removeFromCart = async(itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
 
-     const response  = await fetch("http://localhost:3000/removeCart", {
+     const response  = await fetch(`${API_URL}/removeCart`, {
         method: "POST",
         headers:{
           "Content-Type":"application/json",
@@ -120,7 +121,7 @@ const StoreContextProvider = (props) => {
 useEffect(() => {
   const fetchProduct = async () => {
     try {
-      const response = await fetch("http://localhost:3000/getCart", {
+      const response = await fetch(`${API_URL}/getCart`, {
         headers: {
           "Authorization": `Bearer ${authToken}`
         }
@@ -175,7 +176,7 @@ const getTotalCartAmount = () => {
  const addToReport = async(productId,description) =>{
   console.log(`Bearer${authToken}`);
             try {
-              const response = await fetch("http://localhost:3000/addReport",{
+              const response = await fetch(`${API_URL}/addReport`,{
                 method:"POST",
                 headers:{
                    "Content-Type" : "application/json",

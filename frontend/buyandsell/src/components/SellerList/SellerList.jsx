@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './SellerList.css';
+import API_URL from '../../config';
 import { toast, ToastContainer } from 'react-toastify';
 
 
@@ -8,7 +9,7 @@ export default function List() {
   
      const fetchProducts = async () =>{
         try {
-            const response = await fetch("http://localhost:3000/allProd");
+            const response = await fetch(`${API_URL}/allProd`);
            
             const data = await response.json();
               console.log("Fetched data:", data);
@@ -23,7 +24,7 @@ export default function List() {
      const removeItem = async (id) =>{
         const token = localStorage.getItem('token');
         try {
-            const response = await fetch(`http://localhost:3000/deleteProd/${id}`,{
+            const response = await fetch(`${API_URL}/deleteProd/${id}`,{
                 method: "DELETE",
                 headers:{
                     'Authorization': `Bearer ${token}`,
@@ -68,7 +69,7 @@ export default function List() {
                 </div>
                 {products.map((product, index) => (
                     <div key={index} className="list-table-format">
-                        <img  src={`http://localhost:3000/${product.image}`}   alt={product.title} />
+                        <img  src={`${API_URL}/${product.image}`}   alt={product.title} />
 
                         <p>{product.description}</p>
                         <p>{product.title}</p>
